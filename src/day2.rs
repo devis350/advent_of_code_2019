@@ -1,6 +1,6 @@
 #[aoc_generator(day2)]
 fn generate_intcode(input: &str) -> Vec<usize> {
-    input.split(",").map(|s| s.parse().unwrap()).collect()
+    input.split(',').map(|s| s.parse().unwrap()).collect()
 }
 
 #[aoc(day2, part1)]
@@ -10,7 +10,7 @@ fn simple_intcode(intcode: &[usize]) -> usize {
 
 #[aoc(day2, part2)]
 fn guess_input(intcode: &[usize]) -> usize {
-    let output = 19690720;
+    let output = 19_690_720;
     let mut ret = None;
     for x in 1..99 {
         for y in 1..99 {

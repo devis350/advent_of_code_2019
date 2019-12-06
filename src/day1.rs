@@ -1,6 +1,6 @@
 #[aoc_generator(day1)]
 fn generate_moduls(input: &str) -> Vec<usize> {
-    let splits:Vec<&str> = input.split("/n").collect();
+    let splits:Vec<&str> = input.lines().collect();
     splits.iter().map(|x| str::parse(x).unwrap()).collect()
 }
 
